@@ -33,7 +33,7 @@ namespace DBMS.sql.QueryData
         }
         private void showData(string sql)
         {
-            //string sql = "select * from Products";
+            
             da = new SqlDataAdapter(sql, conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
